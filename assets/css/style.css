@@ -1,0 +1,869 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../../assets/fonts/icomoon.eot?uhyk64');
+  src: url('../../assets/fonts/icomoon.eot?uhyk64#iefix') format('embedded-opentype'), url('../../assets/fonts/icomoon.ttf?uhyk64') format('truetype'), url('../../assets/fonts/icomoon.woff?uhyk64') format('woff'), url('../../assets/fonts/icomoon.svg?uhyk64#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-double-check:before {
+  content: "\e903";
+}
+
+.icon-loupe:before {
+  content: "\e902";
+}
+
+.icon-buy:before {
+  content: "\e907";
+}
+
+.icon-angle-left:before {
+  content: "\e900";
+}
+
+.icon-angle-right:before {
+  content: "\e901";
+}
+
+.icon-facebook:before {
+  content: "\e904";
+}
+
+.icon-insta:before {
+  content: "\e905";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: #3A4747;
+  background: #F8F8F8;
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.form-control {
+  background: #F8F8F8;
+  border: 1px solid rgba(8, 14, 20, 0.1);
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: 44px;
+  font-size: 14px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  outline: none;
+  border: 1px solid #E96D6D !important;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  padding: 8px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'Dosis', sans-serif;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.card {
+  border-radius: 30px;
+  border: none;
+  margin-bottom: 25px;
+}
+
+.card-body {
+  padding: 25px;
+}
+
+
+/*btn-primary*/
+
+.btn-primary {
+  background: #E96D6D;
+  box-shadow: 0px 6px 4px rgba(67, 125, 179, 0.1);
+  border-radius: 44px;
+  border-color: #E96D6D;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background: #d45a5a;
+  border-color: #E96D6D;
+}
+
+.btn-outline-primary {
+  border: 2px solid #E96D6D;
+  background: #fff;
+  color: #E96D6D;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+  background: #E96D6D;
+  color: #fff;
+  border: 2px solid #E96D6D;
+}
+
+
+/* header*/
+
+header nav {
+  width: 100%;
+  background: #fff;
+  padding: 15px 0px !important;
+  z-index: 999;
+}
+
+header .form-control {
+  border: none;
+  height: 40px;
+  border-radius: 30px;
+  padding-left: 45px;
+  width: 280px !important;
+}
+
+header form .icon-loupe {
+  position: absolute;
+  left: 20px;
+  top: 12px;
+}
+
+header .icon-buy {
+  font-size: 28px;
+}
+
+header .badge-danger {
+  border-radius: 50%;
+  background: #E96D6D;
+  font-size: 9px;
+  width: 14px;
+  right: 2px;
+  top: 3px;
+  height: 14px;
+  position: absolute;
+}
+
+header .nav-item {
+  padding: 5px 10px !important;
+}
+
+header .nav-link {
+  padding: 0;
+  font-size: 20px;
+  color: #3A4747 !important;
+  font-weight: 700;
+  font-family: 'Dosis', sans-serif;
+}
+
+header .nav-link:hover {
+  color: #E96D6D !important;
+}
+
+header .navbar-brand img {
+  max-width: 180px;
+}
+
+header .dropdown-menu {
+  width: 440px;
+  padding: 10px 15px 18px;
+  border: none;
+  border-radius: 0 0 30px 30px;
+}
+
+header .dropdown-menu .dropdown-item {
+  padding: .25rem 1rem;
+  font-size: 15px;
+}
+
+header .dropdown-menu>li {
+  width: 32%;
+  display: inline-block;
+}
+
+body.offcanvas-active {
+  overflow: hidden;
+}
+
+.offcanvas-header {
+  display: none;
+}
+
+.screen-overlay {
+  width: 0%;
+  height: 100%;
+  z-index: 30;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(34, 34, 34, 0.6);
+  transition: opacity 0.2s linear, visibility 0.1s, width 1s ease-in;
+}
+
+.screen-overlay.show {
+  transition: opacity 0.5s ease, width 0s;
+  opacity: 1;
+  width: 100%;
+  visibility: visible;
+}
+
+.head-title {
+  background: #FFF0F0;
+}
+
+.head-title a {
+  color: #3A4747;
+  font-size: 14px;
+}
+
+.head-title a:hover {
+  color: #E96D6D;
+}
+
+.head-title .title-left li,
+.head-title .title-right li {
+  display: inline-block;
+  padding: 8px 15px;
+}
+
+.head-title .title-left li:first-child {
+  padding-left: 0;
+}
+
+.head-title .icon-double-check {
+  font-size: 16px;
+  position: relative;
+  top: 2px;
+  margin-right: 5px;
+}
+
+main {
+  padding-top: 40px;
+}
+
+.main-section {
+  padding-bottom: 30px;
+}
+
+
+/* Special offer */
+
+.specil-offer .card {
+  border: none;
+  border-radius: 30px;
+  /*background: transparent;*/
+}
+
+.specil-offer .card-body {
+  border-radius: 30px;
+  background: #fff;
+  padding: 19px 25px;
+}
+
+.specil-offer .card-body h2 {
+  color: #E96D6D;
+  font-weight: 700;
+  font-family: 'Dosis', sans-serif;
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.specil-offer h6 {
+  font-weight: 700;
+  font-family: 'Dosis', sans-serif;
+  font-size: 18px;
+}
+
+.specil-offer p {
+  font-size: 13px;
+}
+
+
+/* Our Service */
+
+.our-serivce {
+  padding: 30px 0 0;
+}
+
+.our-serivce .card {
+  border: none;
+  border-radius: 30px;
+}
+
+.our-serivce .card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.our-serivce .card-body h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-family: 'Dosis', sans-serif;
+}
+
+.our-serivce .card-body img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+}
+
+
+/* Our Product */
+
+.our-product {
+  padding: 50px 0;
+}
+
+.our-product .card {
+  border: none;
+  margin-bottom: 25px;
+  border-radius: 30px;
+}
+
+.our-product .product-title {
+  color: #E96D6D;
+  font-weight: 700;
+  font-size: 36px;
+  position: relative;
+  text-align: center;
+  padding-bottom: 12px;
+  margin-bottom: 40px;
+  font-family: 'Dosis', sans-serif;
+}
+
+.our-product .product-title:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 120px;
+  left: 50%;
+  margin-left: -60px;
+  height: 3px;
+  background: #E96D6D;
+}
+
+.our-product .card img {
+  border-radius: 32px 32px 0px 0px;
+}
+
+.our-product .card-body {
+  border-radius: 30px;
+  margin-top: -37px;
+  background: #fff;
+  padding: 20px 25px;  
+}
+
+.our-product .card-body h5 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.our-product .card-body h5 a {
+  font-family: 'Dosis', sans-serif;
+  color: #E96D6D;
+  font-weight: 700;
+}
+
+.our-product .card-body h5 a:hover {
+  color: #3A4747;
+}
+
+.payment-method {
+  background: #FDF0F0;
+  padding: 20px 0;
+}
+
+.payment-method h5 {
+  font-weight: 700;
+  font-size: 18px;
+  font-family: 'Dosis', sans-serif;
+  margin-bottom: 10px;
+}
+
+.owl-carousel .owl-item img {
+  height: 100%;
+}
+
+.owl-nav button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff !important;
+  margin: 0;
+  font-size: 50px !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.owl-nav button.owl-prev {
+  left: 20px;
+}
+
+.owl-nav button.owl-next {
+  right: 20px;
+}
+
+.left-sidebar .card-body {
+  padding: 25px;
+}
+
+.left-sidebar a {
+  color: #3A4747;
+}
+
+.left-sidebar a:hover {
+  color: #E96D6D;
+}
+
+.left-sidebar h6 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.mark-content .card-body {
+  padding: 30px;
+}
+
+.mark-content .card-body h2 {
+  font-family: 'Dosis', sans-serif;
+  color: #E96D6D;
+  font-weight: 700;
+}
+
+.mark-content .card-body p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.mark-section .our-serivce .card-body {
+  height: 85px;
+}
+
+.product-size input {
+  display: none;
+}
+
+.product-color {
+  margin: 30px 0 40px;
+}
+
+.product-size label {
+  position: relative;
+  text-align: center;
+  padding: 0;
+  height: 60px;
+  width: 60px;
+  border-radius: 6px;
+  display: block;
+  cursor: pointer;
+  margin-bottom: 0;
+  border: 2px solid transparent;
+}
+
+.product-size label img {
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+}
+
+.product-size ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.product-size ul li {
+  padding: 5px 10px 5px 0;
+}
+
+.product-size input:checked+label,
+.product-size .payment-plan input:checked+label,
+.product-size .payment-type input:checked+label {
+  border: 2px solid #E96D6D;
+}
+
+.map-block .card-body {
+  padding: 20px 25px;
+}
+
+.map-block h4 {
+  color: #E96D6D;
+  font-weight: 700;
+  font-family: 'Dosis', sans-serif;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.map-block p {
+  font-size: 14px;
+}
+
+.map-block img {
+  width: 100%;
+}
+
+.cart-section h4 {
+  color: #E96D6D;
+  font-weight: 700;
+  font-size: 26px;
+  font-family: 'Dosis', sans-serif;
+}
+
+.cart-section table thead th {
+  border-top: none;
+  border-bottom: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.cart-section table thead th:first-child,
+.cart-section table tbody td:first-child {
+  padding-left: 0;
+}
+
+.cart-section table thead th:last-child,
+.cart-section table tbody td:last-child {
+  padding-right: 0;
+}
+
+.cart-section table tr td {
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.cart-section table tr td .fa-trash {
+  color: #b3afaf;
+}
+
+.cart-section table tr td .fa-trash:hover {
+  color: red;
+}
+
+.cart-section table tr p {
+  margin-bottom: 0;
+}
+
+.invoice-block ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  align-items: center;
+}
+
+.invoice-block ul li:nth-child(3) {
+  border-top: 1px solid #c4bdbd;
+  padding: 15px 0;
+  font-weight: 600;
+}
+
+.invoice-block .card-body {
+  padding: 30px;
+}
+
+.number-spinner input {
+  border: none;
+  background: #F4F4F4;
+  height: 40px;
+  border-radius: 8px !important;
+  font-size: 26px;
+  font-weight: 600;
+  display: block;
+  pointer-events: none;
+}
+
+.number-spinner .btn-minus {
+  padding: 0;
+  border: none;
+  position: absolute;
+  top: 22px;
+  left: 15px;
+  font-size: 11px !important;
+  z-index: 9999;
+}
+
+.number-spinner .btn-plus {
+  padding: 0;
+  border: none;
+  position: absolute;
+  top: 5px;
+  font-size: 11px !important;
+  left: 14px;
+}
+
+.number-spinner .btn-default:focus {
+  outline: none;
+}
+
+.number-spinner .btn-plus .icon-plus {
+  font-size: 9px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  background: transparent;
+}
+
+.product-detail .fa-check {
+  background: #B5E96D;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+.product-detail h3 del {
+  color: #97a1a1;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.product-detail h4 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.product-detail h4 span {
+  color: #948f8f;
+}
+
+
+/* Footer */
+
+footer {
+  padding: 35px 0 20px;
+  background: #fff;
+}
+
+footer h5 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: unset;
+  margin-bottom: 10px;
+  font-family: 'Dosis', sans-serif;
+}
+
+footer p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+footer ul li {
+  padding: 4px 0;
+}
+
+footer ul li a {
+  color: #3A4747;
+  font-size: 14px;
+}
+
+footer ul li a:hover {
+  color: #E96D6D;
+}
+
+.footer-bottom {
+  border-top: 1px solid #3A474733;
+  padding-top: 20px;
+  margin-top: 25px;
+}
+
+.footer-bottom small {
+  color: #3A474754;
+}
+
+.footer-bottom p {
+  line-height: 16px;
+}
+
+
+/* Media Query */
+
+@media only screen and (max-width: 1200px) {
+  .head-title .title-left li,
+  .head-title .title-right li {
+    display: inline-block;
+    padding: 8px 8px;
+  }
+  #special-offer .owl-item img {
+    border-radius: 30px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  header .navbar-light .navbar-nav .nav-item {
+    padding: 8px 10px !important;
+    border-bottom: 1px solid #fefefe91 !important;
+    width: 100%;
+    text-align: center;
+  }
+  header .navbar-nav {
+    margin: 20px 0 !important;
+  }
+  header .navbar2 {
+    padding: 5px 15px !important;
+  }
+  header .navbar2 .icon-buy {
+    color: #3A4747;
+  }
+  header .navbar2 .badge-danger {
+    right: -6px;
+    top: -2px;
+  }
+  .offcanvas-header {
+    display: block;
+  }
+  .mobile-offcanvas {
+    visibility: hidden;
+    transform: translateX(-100%);
+    border-radius: 0;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1200;
+    width: 320px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transition: visibility 0.4s ease-in-out, transform 0.4s ease-in-out;
+    background-color: #fff !important;
+  }
+  html:lang(ar) .mobile-offcanvas {
+    transform: translateX(100%);
+  }
+  .mobile-offcanvas.show {
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-cont {
+    display: block !important;
+    padding-right: auto !important;
+    padding-left: auto !important;
+  }
+  #navbar_main {
+    box-shadow: 0px 3px 17px #00000047;
+  }
+  .dropdown-menu {
+    border: none;
+  }
+  .nav-item {
+    border-bottom: 1px solid #eaeaea;
+  }
+  #navbar_main .fa-close {
+    -webkit-text-stroke: 3px #fff;
+    font-size: 30px;
+    position: absolute;
+    right: 15px;
+    top: 7px;
+  }
+  .navbar-light .navbar-toggler {
+    border: none;
+    color: #E96D6D;
+  }
+  .navbar-light .navbar-toggler span {
+    font-size: 28px;
+    -webkit-text-stroke: 1px #fff;
+  }
+  .our-serivce .card {
+    margin-bottom: 20px;
+  }
+  .payment-method {
+    text-align: center;
+    padding: 20px 0 30px;
+  }
+  .payment-method img {
+    margin: 10px 20px !important;
+  }
+  .payment-method h5 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  header .dropdown-menu {
+    width: auto;
+    padding: 0;
+  }
+  header .dropdown-menu>li {
+    width: 100%;
+    display: block;
+  }
+  .navbar-nav .dropdown-menu {
+    text-align: center;
+  }
+  footer h5 {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  footer {
+    padding: 10px 0 20px;
+  }
+  .nav-link {
+    padding: 5px 10px;
+  }
+  .nav-link:first-child {
+    padding-left: 0;
+  }
+  .nav-link img {
+    width: 100px;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  header .navbar-brand img {
+    max-width: 160px;
+  }
+  .cart-section table {
+    width: 600px;
+  }
+  .nav-link img {
+    width: 60px;
+    margin-top: 15px;
+  }
+}
